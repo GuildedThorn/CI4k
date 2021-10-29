@@ -1,0 +1,85 @@
+{
+  "client_ID": "903477515467767848",
+  "default": {
+    "state": "",
+    "details": "",
+    "large_image": "",
+    "small_image": "small",
+    "large_image_text": "",
+    "small_image_text": "opticalPvPX"
+  },
+  "timings": {
+    "monday": {},
+    "tuesday": {},
+    "wednesday": {},
+    "thursday": {},
+    "friday": {
+      "4:25": {
+        "state": "dms are open, I may not respond however",
+        "details": "Sleeping probably?",
+        "large_image": "sleeping",
+        "small_image": "",
+        "large_image_text": "dm at your own risk",
+        "small_image_text": ""
+      },
+      "7:30": {
+        "state": "you may DM me during this time",
+        "details": "Getting ready for work",
+        "large_image": "morning",
+        "small_image": "",
+        "large_image_text": "Also probably drinking a coffee",
+        "small_image_text": ""
+      },
+      "8:00": {
+        "state": "dms are open, I may not respond however",
+        "details": "Biking or driving to work",
+        "large_image": "riding",
+        "small_image": "",
+        "large_image_text": "Hope I dont get ran over",
+        "small_image_text": ""
+      },
+      "10:00": {
+        "state": "Absolutely do not dm me",
+        "details": "At work",
+        "large_image": "work",
+        "small_image": "",
+        "large_image_text": "Working on hardware repairs",
+        "small_image_text": ""
+      },
+      "12:00": {
+        "state": "dms are open, I may not respond however",
+        "details": "On Lunch Break",
+        "large_image": "lunch",
+        "small_image": "",
+        "large_image_text": "Eating and reading messages",
+        "small_image_text": ""
+      },
+      "12:30": {
+        "state": "Absolutely do not dm me",
+        "details": "At work",
+        "large_image": "work",
+        "small_image": "",
+        "large_image_text": "Working on hardware repairs",
+        "small_image_text": ""
+      },
+      "18:30": {
+        "state": "dms are open, I may not respond however",
+        "details": "Biking or driving back home",
+        "large_image": "riding",
+        "small_image": "",
+        "large_image_text": "Hope I dont get ran over",
+        "small_image_text": ""
+      },
+      "21:00": {
+        "state": "dms are open)",
+        "details": "Home Most Likely",
+        "large_image": "pc",
+        "small_image": "",
+        "large_image_text": "Probably annoying ItzFighters",
+        "small_image_text": ""
+      }
+    },
+    "saturday": {},
+    "sunday": {}
+  }
+}

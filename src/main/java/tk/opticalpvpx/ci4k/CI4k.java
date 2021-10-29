@@ -62,6 +62,7 @@ public class CI4k {
             System.out.print("There was no Discord client detected. Please open Discord and relaunch CI4k.");
             return;
         }
+        System.out.print("Discord client successfully detected. Creating your rich presence.");
 
         new Timer().schedule(new TimerTask() {
             @Override
@@ -75,6 +76,7 @@ public class CI4k {
                 JsonObject dayData = getPartsOfDay(currentTime.getDayOfWeek());
                 for(Map.Entry<String, JsonElement> entry : dayData.entrySet()) {
                     String[] time = entry.getKey().split(":");
+                    //System.out.print("Time: " + currentTime.getHour() + ":" + currentTime.getMinute());
                     if(time[0].matches(String.valueOf(currentTime.getHour())) && 
                             time[1].matches(String.valueOf(currentTime.getMinute()))) {
                         JsonObject data = entry.getValue().getAsJsonObject();
@@ -82,15 +84,14 @@ public class CI4k {
                             client.close();
                             System.exit(1);
                         }
-                        
                         RichPresence.Builder builder = new RichPresence.Builder();
                         builder.setState(getValueNotNull(data, "state"));
                         builder.setDetails(getValueNotNull(data, "details"));
                         builder.setLargeImage(getValueNotNull(data, "large_image"), getValueNotNull(data, "large_image_text"));
-                        builder.setSmallImage(getValueNotNull(data, "small_image"), getValueNotNull(data, "small_image_text"));
+                        //builder.setSmallImage(getValueNotNull(data, "small_image"), getValueNotNull(data, "small_image_text"));
                         builder.setStartTimestamp(currentTime);
-                            
                         client.sendRichPresence(builder.build());
+                        //System.out.print("Time: " + currentTime.getHour() + ":" + currentTime.getMinute());
                     }
                 }
             }
